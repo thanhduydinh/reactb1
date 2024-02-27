@@ -1,5 +1,5 @@
 header {
-  width: 100vw;
+  width: 99vw;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@ header {
 }
 header .logo {
   background-color: #367fa9;
-  width: 12%;
+  width: 227px;
   font-size: 20px;
   font-weight: 700;
   display: flex;
@@ -23,14 +23,14 @@ header .logo p {
 }
 
 .navbar {
-  width: 88%;
+  width: calc(99vw - 227px);
   background-color: #3c8dbc;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navbar .navbar__icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
   height: 100%;
   padding: 0 16px;
   display: flex;

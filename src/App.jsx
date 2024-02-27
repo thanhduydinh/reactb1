@@ -11,8 +11,10 @@ function App() {
       <main>
         <Sidebar />
         <>
-          <HeaderContent />
-          <MainContent />
+          <div className="content">
+            <HeaderContent />
+            <MainContent />
+          </div>
         </>
       </main>
     </>

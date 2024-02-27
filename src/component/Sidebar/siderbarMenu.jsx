@@ -1,87 +1,86 @@
 import "./style.css";
 import { useState } from "react";
 
+var components = [
+  {
+    name: "Dasboard",
+    logo: "fa-gauge",
+    child: ["Dasboard v1", "Dasboard v2"],
+  },
+  {
+    name: "Layout Opitions",
+    logo: "fa-file",
+    isPrimary: 4,
+    child: ["Top Navigation", "Boxed", "Fixed", "Collapsed Sidebar"],
+  },
+  {
+    name: "Widgets",
+    logo: "fa-table-cells",
+    isSucess: 1,
+    child: [],
+  },
+  {
+    name: "Charts",
+    logo: "fa-chart-pie",
+    child: ["ChartJS", "Morris", "Flot", "Inline charts"],
+  },
+  {
+    name: "UI Elements",
+    logo: "fa-laptop",
+    child: ["General", "Icons", "Buttons", "Sliders", "Timeline", "Modals"],
+  },
+  {
+    name: "Form",
+    logo: "fa-pen-to-square",
+    child: ["General Elements", "Advanced Elements", "Editors"],
+  },
+  {
+    name: "Tables",
+    logo: "fa-table",
+    child: ["Simple Tables", "Data Tables"],
+  },
+  {
+    name: "Calendar",
+    logo: "fa-calendar-days",
+    isPrimary: 17,
+    isDanger: 3,
+    child: [],
+  },
+  {
+    name: "Mailbox",
+    logo: "fa-envelope",
+    isSucess: 16,
+    isDanger: 5,
+    isWarning: 12,
+    child: [],
+  },
+  {
+    name: "Examples",
+    logo: "fa-folder",
+    child: [
+      "Invoice",
+      "Profile",
+      "Login",
+      "Register",
+      "Lockscreen",
+      "404 Error",
+      "500 Error",
+      "Black Page",
+      "Pace Page",
+    ],
+  },
+  {
+    name: "Multilevel",
+    logo: "fa-share",
+    child: ["Level One", "Level Two", "Level Three"],
+  },
+  {
+    name: "Documentation",
+    logo: "fa-book",
+    child: [],
+  },
+];
 function SidebarMenu() {
-  var components = [
-    {
-      name: "Dasboard",
-      logo: "fa-gauge",
-      child: ["Dasboard v1", "Dasboard v2"],
-    },
-    {
-      name: "Layout Opitions",
-      logo: "fa-file",
-      isPrimary: 4,
-      child: ["Top Navigation", "Boxed", "Fixed", "Collapsed Sidebar"],
-    },
-    {
-      name: "Widgets",
-      logo: "fa-table-cells",
-      isSucess: 1,
-      child: [],
-    },
-    {
-      name: "Charts",
-      logo: "fa-chart-pie",
-      child: ["ChartJS", "Morris", "Flot", "Inline charts"],
-    },
-    {
-      name: "UI Elements",
-      logo: "fa-laptop",
-      child: ["General", "Icons", "Buttons", "Sliders", "Timeline", "Modals"],
-    },
-    {
-      name: "Form",
-      logo: "fa-pen-to-square",
-      child: ["General Elements", "Advanced Elements", "Editors"],
-    },
-    {
-      name: "Tables",
-      logo: "fa-table",
-      child: ["Simple Tables", "Data Tables"],
-    },
-    {
-      name: "Calendar",
-      logo: "fa-calendar-days",
-      isPrimary: 17,
-      isDanger: 3,
-      child: [],
-    },
-    {
-      name: "Mailbox",
-      logo: "fa-envelope",
-      isSucess: 16,
-      isDanger: 5,
-      isWarning: 12,
-      child: [],
-    },
-    {
-      name: "Examples",
-      logo: "fa-folder",
-      child: [
-        "Invoice",
-        "Profile",
-        "Login",
-        "Register",
-        "Lockscreen",
-        "404 Error",
-        "500 Error",
-        "Black Page",
-        "Pace Page",
-      ],
-    },
-    {
-      name: "Multilevel",
-      logo: "fa-share",
-      child: ["Level One", "Level Two", "Level Three"],
-    },
-    {
-      name: "Documentation",
-      logo: "fa-book",
-      child: [],
-    },
-  ];
-
   const [showChild, setShowChild] = useState([]);
 
   const toggleSidebarChild = (index) => {
@@ -90,7 +89,6 @@ function SidebarMenu() {
     setShowChild(newShowChild); // Cập nhật mảng trạng thái mới
     var iconleft = document.querySelector(`.chevron-left${index}`);
     var li = document.querySelector(`.component${index}`);
-    console.log(li);
     if (newShowChild[index] === true) {
       li.style.background = "#1e282c";
       li.style.color = "#fff";

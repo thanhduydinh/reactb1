@@ -1,10 +1,14 @@
 #root {
-  max-width: 1280px;
+  width: 99vw;
   margin: 0;
   padding: 0;
 }
 
 main {
   display: flex;
-  width: 100vw;
+  width: 99vw;
+}
+
+.content {
+  width: calc(99vw - 227px);
 }/*# sourceMappingURL=App.css.map */

@@ -1,1 +1,107 @@
-/*# sourceMappingURL=style.css.map */
+.wrapper {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ecf0f5;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding-bottom: 320px;
+}
+.wrapper h3 {
+  border-top: 3px solid #d2d6de;
+  width: 100%;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+  color: #444444;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 10px 0 20px 10px;
+  box-sizing: border-box;
+}
+.wrapper table {
+  font-family: arial, sans-serif;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-spacing: 0;
+  text-align: left;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+}
+.wrapper thead {
+  border-collapse: separate;
+}
+.wrapper thead th {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.wrapper thead i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  opacity: 0.5;
+}
+.wrapper tbody tr {
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 1px;
+}
+.wrapper tbody td {
+  border-bottom-width: 0;
+  font-size: 0.8rem;
+}
+.wrapper td,
+.wrapper th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.wrapper th {
+  width: 20%;
+}
+.wrapper .navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 12px 20px 12px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.wrapper .navigation p {
+  font-size: 0.8rem;
+}
+.wrapper .navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.wrapper .navigation ul li {
+  margin-left: 0;
+  border: 1px solid #ddd;
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+.wrapper .navigation ul li:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.wrapper .navigation ul li:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.wrapper .navigation ul li:nth-child(2) {
+  background-color: #337ab7;
+  border-color: #337ab7;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

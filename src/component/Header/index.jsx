@@ -8,6 +8,26 @@ function Header() {
     setDisplayStyle((prevStyle) => (prevStyle === "none" ? "block" : "none"));
   };
 
+  const [isLogoChanged, setIsLogoChanged] = useState(false);
+
+  const changeLogoText = () => {
+    const logoElement = document.querySelector(".logo");
+    if (logoElement) {
+      if (!isLogoChanged) {
+        logoElement.innerHTML = "Admin<p>LTE</p>";
+      } else {
+        logoElement.innerHTML = "<p>ALT</p>";
+      }
+      setIsLogoChanged(!isLogoChanged);
+    }
+  };
+
+  // Function để xử lý khi click vào navbar icon
+  const handleNavbarIconClick = () => {
+    // Gọi function để thay đổi nội dung của logo
+    changeLogoText();
+  };
+
   return (
     <header>
       <div className="logo">
@@ -15,7 +35,7 @@ function Header() {
       </div>
 
       <div className="navbar">
-        <div className="navbar__icon">
+        <div className="navbar__icon" onClick={handleNavbarIconClick}>
           <i className="fa-solid fa-bars"></i>
         </div>
 
